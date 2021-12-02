@@ -7,7 +7,10 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
 
 
 
-<form action="index.php" method="get" >
+
+
+
+<form action="index.php" method="get">
 
 <label for="name">NAME:</label>
 <input type="text" name="name" id="name">
@@ -18,6 +21,7 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
 <label for="age">AGE:</label>
 <input type="text" name="age" id="age">
 
+<input type="submit" value="SUBMIT">
 
 
 </form>
