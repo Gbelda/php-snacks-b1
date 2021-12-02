@@ -25,7 +25,6 @@ $matches = [
         'awayPoints' => 70,
     ],
 ];
-var_dump($matches[0]) 
 
 ?>
 
