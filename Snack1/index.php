@@ -6,25 +6,26 @@ Olimpia Milano - Cantù | 55-60 -->
 <?php
 
 $matches = [
-[
-    "home" => 'Olimpia Milano',
-    'away' => 'Virtus Bologna',
-    'homePoints' => 80,
-    'awayPoints' => 78,
-],
-[
-    "home" => 'Varese',
-    'away' => 'Pall. Cantu',
-    'homePoints' => 50,
-    'awayPoints' => 69,
-],
-[
-    "home" => 'V.L Pesaro',
-    'away' => 'Reyer Venezia',
-    'homePoints' => 94,
-    'awayPoints' => 70,
-],
+    [
+        "home" => 'Olimpia Milano',
+        'away' => 'Virtus Bologna',
+        'homePoints' => 80,
+        'awayPoints' => 78,
+    ],
+    [
+        "home" => 'Varese',
+        'away' => 'Pall. Cantu',
+        'homePoints' => 50,
+        'awayPoints' => 69,
+    ],
+    [
+        "home" => 'V.L Pesaro',
+        'away' => 'Reyer Venezia',
+        'homePoints' => 94,
+        'awayPoints' => 70,
+    ],
 ];
+var_dump($matches[0]) 
 
 ?>
 
