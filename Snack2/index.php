@@ -4,13 +4,24 @@ che mail contenga un punto e una chiocciola e
 che age sia un numero. 
 Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
 
+<?php
 
+$name = $_GET['name'];
+$email = $_GET['mail'];
+$age = $_GET['age'];
 
+?>
 
-
-
-
-<form action="index.php" method="get">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="get">
 
 <label for="name">NAME:</label>
 <input type="text" name="name" id="name">
@@ -24,4 +35,16 @@ Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” 
 <input type="submit" value="SUBMIT">
 
 
+<?php if($name == null && $email == null && $age == null){ ?>
+    <h1>Inserire i dati</h1>
+    <?php } elseif (strlen($name) > 3 && strpos($email, '@') != null && is_numeric($age)){ ?>
+        <h1>Accesso Riuscito</h1>
+        <?php } else{ ?>
+            <h1>Accesso Negato</h1>
+            <?php } ?>
+    
+
 </form>
+</body>
+</html>
+
