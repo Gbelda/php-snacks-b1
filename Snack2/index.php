@@ -10,7 +10,6 @@ $name = $_GET['name'];
 $email = $_GET['mail'];
 $age = $_GET['age'];
 
-var_dump(strpos($email, '@'))
 
 ?>
 
