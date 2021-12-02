@@ -10,6 +10,8 @@ $name = $_GET['name'];
 $email = $_GET['mail'];
 $age = $_GET['age'];
 
+var_dump(strpos($email, '@'))
+
 ?>
 
 <!DOCTYPE html>
@@ -37,11 +39,11 @@ $age = $_GET['age'];
 
 <?php if($name == null && $email == null && $age == null){ ?>
     <h1>Inserire i dati</h1>
-    <?php } elseif (strlen($name) > 3 && strpos($email, '@') != null && is_numeric($age)){ ?>
+    <?php } elseif (strlen($name) > 3 && strpos($email, '@') != false && is_numeric($age)){ ?>
         <h1>Accesso Riuscito</h1>
-        <?php } else{ ?>
-            <h1>Accesso Negato</h1>
-            <?php } ?>
+    <?php } else{ ?>
+        <h1>Accesso Negato</h1>
+ <?php } ?>
     
 
 </form>
