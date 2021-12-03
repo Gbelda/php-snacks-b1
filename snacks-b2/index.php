@@ -41,7 +41,24 @@ foreach ($ads as $ad) {
     }
     
 }
-var_dump($activeAds);
 
+$randAd = array_rand($activeAds, 1);
+$showAd = $activeAds[$randAd]["image_path"];
+var_dump($showAd);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>php random Ad</title>
+</head>
+<body>
+    <div class="ad">
+        <img src="<?php echo $showAd ?>" alt="">
+    </div>
+</body>
+</html>
 
