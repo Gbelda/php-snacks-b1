@@ -33,5 +33,15 @@ $ads = [
 
 ];
 
+$activeAds = [];
+
+foreach ($ads as $ad) {
+    if($ad['is_active'] == true){
+        array_push($activeAds, $ad);
+    }
+    
+}
+var_dump($activeAds);
+
 ?>
 
