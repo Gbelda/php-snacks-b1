@@ -25,10 +25,12 @@ $user = $_GET['name'];
 <body>
     <?php if (in_array(strtolower($user), $invites)) { ?>
     
-    <h1><?php echo "OK";?></h1>
+    <h1 style="color: green;"><?php echo "OK";?></h1>
 
 <?php }else{ ?>
-    <h1><?php echo "KO";?></h1>
+
+    <h1 style="color: red;"><?php echo "KO";?></h1>
+
  <?php } ?>
     <a href="./index.php">
         GO BACK
