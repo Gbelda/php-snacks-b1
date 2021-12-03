@@ -11,14 +11,29 @@ $invites = array(
 
 $user = $_GET['name'];
 
-if (in_array(strtolower($user), $invites)) {
-    
-    echo "OK";
-
-}else{
-    echo 'KO';
-}
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php if (in_array(strtolower($user), $invites)) { ?>
+    
+    <h1><?php echo "OK";?></h1>
+
+<?php }else{ ?>
+    <h1><?php echo "KO";?></h1>
+ <?php } ?>
+    <a href="./index.php">
+        GO BACK
+    </a>
+</body>
+</html>
 
 
