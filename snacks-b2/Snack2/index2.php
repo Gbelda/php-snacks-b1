@@ -11,7 +11,7 @@ $invites = array(
 
 $user = $_GET['name'];
 
-if (in_array($user, $invites)) {
+if (in_array(strtolower($user), $invites)) {
     
     echo "OK";
 
