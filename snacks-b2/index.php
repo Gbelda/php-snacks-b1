@@ -44,6 +44,7 @@ foreach ($ads as $ad) {
 
 $randAd = array_rand($activeAds, 1);
 $showAd = $activeAds[$randAd]["image_path"];
+$adLink = $activeAds[$randAd]["link"];
 var_dump($showAd);
 ?>
 
@@ -56,9 +57,11 @@ var_dump($showAd);
     <title>php random Ad</title>
 </head>
 <body>
-    <div class="ad">
-        <img src="<?php echo $showAd ?>" alt="">
-    </div>
+    <a href="<?php echo $adLink?>" target="_blank">
+        <div class="ad">
+            <img src="<?php echo $showAd ?>" alt="">
+        </div>
+</a>
 </body>
 </html>
 
